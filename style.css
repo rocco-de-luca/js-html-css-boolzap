@@ -1,0 +1,268 @@
+body{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+     background-image: linear-gradient(
+         to bottom, 
+         #009688 0px,
+         #009688 15vh,
+         #d2dbdc 15vh,
+         #d2dbdc 100%
+     );
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    min-width: 900px;
+    height: 95%;
+    background-color: #fff;
+}
+
+/*sidebar*/
+
+.sidebar{
+  
+    width: 35%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.header-side,
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background: #ccc;
+}
+
+.header-side{
+    border-right: 1px solid rgba(0, 0, 0, .2);;
+}
+
+
+
+.icons{
+   padding: 20px;
+}
+
+.icons a i{
+    padding: 7px;
+    color: #aaa;
+}
+
+.box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lightblue;
+  width: 100%;
+  min-height: 50px;
+}
+
+.box i{
+    margin: 13px 0px 0px 5px;
+    background-color: #fff;
+    border-radius: 100%;
+    color: lightblue;
+    padding:20px;
+  
+}
+
+.box-right,
+.box-left{
+    
+    min-height: 30px;
+    margin: 0px 0px 10px 5px;
+}
+
+.box-right h4{
+    margin: 30px 0 0 10px;
+    font-size: 12px;
+    line-height: 8px;
+}
+
+.box-right a{
+    color: #000;
+    margin: 20px 0 0 10px;
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+.box-chat{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    min-height: 50px;
+}
+
+.box-chat i{
+    margin: 13px 0px 0px 5px;
+    background-color: #fff;
+    color: #ccc;
+    
+}
+
+#cerca-chat{
+    width:300px;
+    margin: 12px 0px 0px 10px;
+}
+
+.box-profiles{
+    display: flex;
+   /* flex-direction: column;*/
+    justify-content: space-between;
+    height: 50px;
+}
+
+.box-profiles:hover,
+.box-profiles:focus{
+    background-color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box-profiles img{
+    height: 80%;
+    border-radius: 100%;
+    margin: 10px 0px 0px 5px;
+}
+
+.box-profiles-center{
+    line-height: 1px;
+}
+
+.box-profiles-center h4,
+.box-profiles-center p{
+margin: 20px 0px 0px 10px;
+
+}
+
+.box-profiles-right{
+    text-align: right;
+    font-size: 10px;
+    margin: 7px 3px 0px 0px;
+}
+/*content */
+
+.content{
+    width: 65%;
+    min-height: 100%;
+    background-image: url(./boolzapp-materials/img/mine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content{
+    border-left: 1px solid rgba(0, 0, 0, .2);
+}
+
+.header-side img,
+.header-content img{
+    height: 80%;
+    margin: 5px 0px 5px 5px;
+    border-radius: 100%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.chatuno,
+.chattre{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat1,
+.chat3{
+    display: flex;
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 25px 15px 0px 0px;
+
+}
+
+.chat1 a,
+.chat3 a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.chat1 p,
+.chat3 p{
+    align-items: flex-end;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .2)
+}
+
+.chatdue{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chat2{
+    display: flex;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 25px 0px 0px 15px;
+}
+
+.chat2 a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.chat2 p{
+    align-items: flex-end;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .2)
+}
+
+/*footer content*/
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background: #ccc;
+    margin-top: 220px;
+}
+
+#messaggio{
+    width: 450px;
+    height: 30px;
+}
+/*
+.smile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25%;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.telegram{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+}
+*/
