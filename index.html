@@ -3,194 +3,278 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="sidebar">
-            <header class="header-side">
-                <img src="./boolzapp-materials/img/avatar_io.jpg" alt="io">
+        <div class="side">
+            <div class="header-side">
+                <div class="avatar"></div>
                 <div class="icons">
                     <a href="#"><i class="fas fa-circle-notch"></i></a>
                     <a href="#"><i class="fas fa-comment-alt"></i></a>
                     <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                 </div>
-            </header>
-            <main>
-                <div class="box">
-                    <div class="box-left">
-                        <a href="#"><i class="fas fa-bell-slash"></i></a>
-                    </div>
-                    <div class="box-right">
-                        <h4>RICEVI NOTIFICHE DI NUOVI MESSAGGI</h4>
-                        <a href="#">attiva notifiche desktop</a>
-                    </div>
-                </div>
-                <div class="box-chat">
-                    <div class="box-left">
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </div>
-                    <div class="box-right">
-                        <input type="text" name="text" id="cerca-chat" value=""
-                            placeholder="Cerca ho inizia una nuova chat">
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_1.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Michele</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_2.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Fabio</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_3.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Samuele</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_4.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Alessandro B.</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_5.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Alessandro L.</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_6.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Claudia</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_7.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Davide</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
-                <div class="box-profiles">
-                    <div class="box-profiles-left">
-                        <img src="./boolzapp-materials/img/avatar_8.jpg" alt="">
-                    </div>
-                    <div class="box-profiles-center">
-                        <h4><strong>Federico</strong></h4>
-                        <p>Non poteva essere altrimenti</p>
-                    </div>
-                    <div class="box-profiles-right">
-                        <span>17:53</span>
-                    </div>
-                </div>
+            </div>
 
-            </main>
+            <div class="di-notifica">
+                <div class="icons-di-notifica">
+                    <i class="fa fa-bell-slash"></i>
+                </div>
+                <div class="text">
+                    <h3>Ricevi notifiche di nuovi messaggi</h3>
+                    <a href="#">Attiva notifiche desktop</a>
+                </div>
+            </div>
 
+            <div class="search">
+                <label class="search-label" for="search-input">
+                    <i class="fa fa-search"></i>
+                </label>
+                <input type="text" id="search-input" class="search-input" name="search-input"
+                    placeholder="Cerca o inizia una nuova chat">
+            </div>
+            <div class="container-friends">
+                <div class="friends active" data-conversazione="0">
+                    <div class="avatar">
+                        <img src="img/avatar_1.jpg" alt="avatar_1">
+                    </div>
+                    <div class="text">
+                        <h3>Michele</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="1">
+                    <div class="avatar">
+                        <img src="img/avatar_2.jpg" alt="avatar_2">
+                    </div>
+                    <div class="text">
+                        <h3>Fabio</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="2">
+                    <div class="avatar">
+                        <img src="img/avatar_3.jpg" alt="avatar_3">
+                    </div>
+                    <div class="text">
+                        <h3>Samuele</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="3">
+                    <div class="avatar">
+                        <img src="img/avatar_4.jpg" alt="avatar_4">
+                    </div>
+                    <div class="text">
+                        <h3>Alessandro B.</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="4">
+                    <div class="avatar">
+                        <img src="img/avatar_5.jpg" alt="avatar_5">
+                    </div>
+                    <div class="text">
+                        <h3>Alessandro L.</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="5">
+                    <div class="avatar">
+                        <img src="img/avatar_6.jpg" alt="avatar_6">
+                    </div>
+                    <div class="text">
+                        <h3>Claudia</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="6">
+                    <div class="avatar">
+                        <img src="img/avatar_7.jpg" alt="avatar_7">
+                    </div>
+                    <div class="text">
+                        <h3>Davide</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+                <div class="friends" data-conversazione="7">
+                    <div class="avatar">
+                        <img src="img/avatar_8.jpg" alt="avatar_8">
+                    </div>
+                    <div class="text">
+                        <h3>Federico</h3>
+                        <p>Non poteva essere altrimenti</p>
+                    </div>
+                    <div class="time">17:53</div>
+                </div>
+            </div>
         </div>
+
+        <!--content-->
+
         <div class="content">
-            <header class="header-content">
-                <img src="./boolzapp-materials/img/avatar_1.jpg" alt="avatar1">
+            <div class="header-content">
+                <div class="avatar">
+                </div>
+
                 <div class="icons">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-paperclip"></i></a>
                     <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                 </div>
-            </header>
-            <main class="main-content">
-                <div class="chatuno">
-                    <div class="chat1">
-                        <a href="#">ciao come stai?</a>
-                        <p>06:20</p>
-                    </div>
-                </div>
-                <div class="chatdue">
-                    <div class="chat2">
-                        <a href="#">ciao come stai?</a>
-                        <p>14:21</p>
-                    </div>
-                </div>
-                <div class="chattre">
-                    <div class="chat3">
-                        <a class="element" href="#">ciao come stai?</a>
-                        <p>21:41</p>
-                    </div>
-                </div>
-
-            </main>
-
-            <!--template-->
-            <div class="template">
-                <a class="element" data-element=""></i></li>
             </div>
-            <!--footer-->
-            <footer class="footer-content">
-                <div class="smile">
+
+            <div class="messages-container">
+                <div class="right-messages active" data-conversazione="0">
+                    <div class="message sent">
+                        <span class="message-text">Ciao, come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao, come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao, come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="1">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="2">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="3">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="4">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="5">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="6">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+                <div class="right-messages" data-conversazione="7">
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-icons">
                     <i class="far fa-smile"></i>
                 </div>
-                <div class="messagge">
-                    <input type="text" name="text" class="messaggio" value="" placeholder="Scrivi un messaggio">
+                <input class="nuovo-messaggio" type="text" placeholder="Scrivi un messagio">
+                <div class="footer-icons send">
+                    <i class="fas fa-microphone"></i>
                 </div>
-                <div class="telegram">
-                    <i class="fab fa-telegram-plane"></i>
-                </div>
-            </footer>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Template -->
+    <div class="template">
+        <div class="message">
+            <span class="message-text">Ciao, come stai?</span>
+            <span class="message-time">17:31</span>
         </div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src="js/main.js" charset="utf-8"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
