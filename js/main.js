@@ -38,7 +38,7 @@ $(document).ready(function () {
 
         $('.profiles').each(function () {
             // nome del contatto attuale nel loop
-            var nomeContatto = $('this').find('.descrizione h3').text().toLowerCase();
+            var nomeContatto = $(this).find('.descrizione h3').text().toLowerCase();
 
             // verifica input con nomi contatti
             if (nomeContatto.includes(".search")) {
