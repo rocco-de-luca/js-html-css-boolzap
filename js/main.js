@@ -41,7 +41,7 @@ $(document).ready(function () {
             var nomeContatto = $(this).find('.descrizione h3').text().toLowerCase();
 
             // verifica input con nomi contatti
-            if (nomeContatto.includes(".search")) {
+            if (nomeContatto.includes(search)) {
                 $(this).show();
             } else {
                 $(this).hide();
