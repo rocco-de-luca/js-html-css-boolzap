@@ -46,22 +46,22 @@ $(document).ready(function () {
         } else{
             $(this).hide();
         }
-    });
-    });
+     });
+     });
     
      
     
     
     
-    //function
+     //function
     
-    // invia nuovo messaggio
-    function sendMessage(input) {
-    // ottieni testo
-    var testoMessaggio = input.val().trim();
+     // invia nuovo messaggio
+     function sendMessage(input) {
+      // ottieni testo
+     var testoMessaggio = input.val().trim();
     
-    // Check contenuto
-    if(testoMessaggio.length > 0) {
+     // Check contenuto
+     if(testoMessaggio.length > 0) {
         // clone template
         var nuovoMessaggio = $('.template .message').clone();
     
@@ -89,61 +89,61 @@ $(document).ready(function () {
     
         setTimeout(function(){
             //clona template
-    var nuovaRisposta = $('.template .messagge').clone();
-    //add class
-    nuovaRisposta = addClass('received');
+        var nuovaRisposta = $('.template .messagge').clone();
+        //add class
+        nuovaRisposta = addClass('received');
     
     
-    //add text mess
-    nuovaRisposta.children('.message-text').text('ok!');
+        //add text mess
+        nuovaRisposta.children('.message-text').text('ok!');
     
-    //ora mess
-    var orario = oraAttuale();
+        //ora mess
+        var orario = oraAttuale();
     
-    // aggiungi ora a template
-    nuovaRisposta.children('.message-time').text(orario);
+        // aggiungi ora a template
+        nuovaRisposta.children('.message-time').text(orario);
     
-    // aggiunta messaggio nel contenitore messaggi attuale
+        // aggiunta messaggio nel contenitore messaggi attuale
     
-    $('.right-message.active').append(nuovaRisposta);
+        $('.right-messages.active').append(nuovaRisposta);
     
-    // scroll in fondo
+        // scroll in fondo
     
-    scrollMessaggio();
+        scrollMessaggio();
     
-    },1000);
+        },1000);
     
     
     
-    }
-    }
+     }
+     }
     
-    //genera o ritorna ora attuale
+     //genera o ritorna ora attuale
     
-    function oraAttuale(){
-    var data = new Date();
+     function oraAttuale(){
+     var data = new Date();
         var ora = addZero( data.getHours() );
         var minuti = addZero( data.getMinutes() );
         return ora = ':' + minuti;
-    }
+     }
     
-    // Aggiungi zero iniziale a numeri inferiori a 10
-    function addZero(numero) {
-    if(numero < 10) {
+     // Aggiungi zero iniziale a numeri inferiori a 10
+     function addZero(numero) {
+     if(numero < 10) {
         numero = '0' + numero;
-    }
+     }
     
-    return numero;
-    }
+     return numero;
+     }
     
-    //  scroll all'ultimo messaggio inserito
-    function scrollMessaggio() {
-    var pixelScroll = $('.right-message.active').height();
+     //  scroll all'ultimo messaggio inserito
+     function scrollMessaggio() {
+     var pixelScroll = $('.right-messages.active').height();
     
-    //$('.messages-container').scrollTop(pixelScroll);
-    $('.messages-container').animate({
+     //$('.main-content').scrollTop(pixelScroll);
+     $('.main-content').animate({
       scrollTop: pixelScroll
-    }, 500);
-    }
-
+     }, 500);
+      }
+    
 }); //<- end document ready
