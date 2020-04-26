@@ -1,320 +1,303 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boolzapp | M1</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'/>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+    <!-- 
+        GENERAL CONTAINER
+    -->
     <div class="container">
+        <!-- 
+            SIDEBAR
+        -->
         <div class="side">
-            <div class="header-side">
-                <img src="img/avatar_io.jpg" alt="">
-                <div class="icons">
+            <header class="header">
+                <div class="profile">
+                    <img class="avatar" src="img/avatar_io.jpg" alt="user name">
+                </div>
+
+                <div class="action">
                     <a href="#"><i class="fas fa-circle-notch"></i></a>
                     <a href="#"><i class="fas fa-comment-alt"></i></a>
                     <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                 </div>
-            </div>
-            <div class="box-di-notifica">
-                <div class="icons">
+            </header>
+
+            <div class="notifications">
+                <div class="icon">
                     <i class="fa fa-bell-slash"></i>
                 </div>
-                <div class="notifica">
-                    <h4>Ricevi notifiche di nuovi messaggi</h4>
+                <div class="text">
+                    <h3>Ricevi notifiche di nuovi messaggi</h3>
                     <a href="#">Attiva notifiche desktop</a>
                 </div>
             </div>
+
             <div class="search">
                 <label class="search-label" for="search-input">
                     <i class="fa fa-search"></i>
                 </label>
-                <input type="text" id="search-input" class="search-input" name="search-input"
-                    placeholder="Cerca o inizia una nuova chat">
+                <input type="text" id="search-input" class="search-input" 
+                    name="search-input"
+                    placeholder="Cerca o inizia una nuova chat"
+                >
             </div>
 
-            <div class="box4">
-                <div class="profiles active" data-conversazione="0">
+            <div class="contacts">
+                <div class="contact active" data-conversazione="0" >
                     <div class="user">
-                        <img src="img/avatar_1.jpg" alt="">
+                        <img class="avatar" src="img/avatar_1.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Michele</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Michele</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17:53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="1">
+                <div class="contact" data-conversazione="1">
                     <div class="user">
-                        <img src="img/avatar_2.jpg" alt="">
+                        <img class="avatar" src="img/avatar_2.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Fabio</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Fabio</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="2">
+                <div class="contact" data-conversazione="2">
                     <div class="user">
-                        <img src="img/avatar_3.jpg" alt="">
+                        <img class="avatar" src="img/avatar_3.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Samuele</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Samuele</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="3">
+                <div class="contact" data-conversazione="3">
                     <div class="user">
-                        <img src="img/avatar_4.jpg" alt="">
+                        <img class="avatar" src="img/avatar_4.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Alessandro B.</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Alessandro B.</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="4">
+                <div class="contact" data-conversazione="4">
                     <div class="user">
-                        <img src="img/avatar_5.jpg" alt="">
+                        <img class="avatar" src="img/avatar_5.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Alessandro L.</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Alessandro L.</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="5">
+                <div class="contact" data-conversazione="5">
                     <div class="user">
-                        <img src="img/avatar_6.jpg" alt="">
+                        <img class="avatar" src="img/avatar_6.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Claudia</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Claudia</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="6">
+                <div class="contact" data-conversazione="6">
                     <div class="user">
-                        <img src="img/avatar_7.jpg" alt="">
+                        <img class="avatar" src="img/avatar_7.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Davide</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Davide</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
-
-
-                <div class="profiles" data-conversazione="7">
+                <div class="contact" data-conversazione="7">
                     <div class="user">
-                        <img src="img/avatar_8.jpg" alt="">
+                        <img class="avatar" src="img/avatar_8.jpg" alt="user name">
+                        <div class="info">
+                            <h3>Federico</h3>
+                            <div class="text">Non poteva essere altrimenti</div>
+                        </div>
                     </div>
-                    <div class="descrizione">
-                        <h4>Federico</h4>
-                        <p>non poteva essere altrimenti</p>
-                    </div>
+                    <div class="time">17.53</div>
                 </div>
             </div>
         </div>
+
+
+
+        <!-- 
+            CHAT WINDOW
+        -->
         <div class="content">
-            <div class="box1">
-                <img src="img/avatar_1.jpg" alt="">
-                <div class="text">
-                    <h4>Federico</h4>
-                    <p>non poteva essere altrimenti</p>
+            <header class="header">
+                <div class="profile">
+                    <img class="avatar" src="img/avatar_1.jpg" alt="user name">
+                    <h3>
+                        <span class="header-contact-name">Michele</span>
+                        <div class="time">Ultimo accesso oggi alle 15:40</div>
+                    </h3>
                 </div>
-                <div class="icons">
+
+                <div class="action">
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-paperclip"></i></a>
                     <a href="#"><i class="fas fa-ellipsis-v"></i></a>
                 </div>
-            </div>
+            </header>
 
-            <div class="main-content">
+            <div class="messages-container">
                 <div class="right-messages active" data-conversazione="0">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
+                    <div class="message sent">
                         <span class="message-text">Ciao, come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao, come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao, come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="1">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="2">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="3">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="4">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="5">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="6">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
                 <div class="right-messages" data-conversazione="7">
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
-                    </div>
-                    <div class="mess-received">
-                        <span class="message-text">Ciao, come stai?</span>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
                         <span class="message-time">17:31</span>
                     </div>
-                    <div class="message-sent-conteiner">
-                        <div class="mess-sent">
-                            <span class="message-text">Ciao, come stai?</span>
-                            <span class="message-time">17:31</span>
-                        </div>
+                    <div class="message received">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
+                    </div>
+                    <div class="message sent">
+                        <span class="message-text">Ciao come stai?</span>
+                        <span class="message-time">17:31</span>
                     </div>
                 </div>
-
             </div>
 
             <div class="footer">
                 <div class="footer-icons">
                     <i class="far fa-smile"></i>
                 </div>
-                <input class="nuovo-messaggio" type="text" placeholder="Scrivi un messagio">
+                <input class="new-message-input" type="text" placeholder="Scrivi un messagio">
                 <div class="footer-icons send">
                     <i class="fas fa-microphone"></i>
                 </div>
             </div>
-
         </div>
 
+    </div>
 
 
 
-
-        <!-- Template -->
-        <div class="template">
-            <div class="message">
-                <span class="message-text">Ciao, come stai?</span>
-                <span class="message-time">17:31</span>
-            </div>
+    <!-- Template -->
+    <div class="template">
+        <div class="message">
+            <span class="message-text">Ciao, come stai?</span>
+            <span class="message-time">17:31</span>
         </div>
+    </div>
 
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
-        <script src="js/main.js"></script>
+
+
+    <!-- JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
