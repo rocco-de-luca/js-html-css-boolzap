@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 15px 20px 15px;
   font-size: 15px;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 9px;
   clear: both;
 }
 .messages-container .message.sent {
